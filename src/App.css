@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e1e2f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Estilos para AppBar */
+.styled-app-bar {
+  background-color: #333; /* Fondo oscuro */
+  z-index: 1100; /* Asegura que el AppBar esté por encima de otros elementos */
+}
+
+/* Estilos para Toolbar */
+.styled-toolbar {
+  justify-content: space-between;
+}
+
+/* Estilos para NavButton */
+.nav-button {
+  margin: 8px; /* theme.spacing(1) equivale a 8px por defecto */
+  color: #fff; /* Texto blanco */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.nav-button:hover {
+  background-color: #555; /* Fondo más claro al pasar el ratón */
+}
+
+/* Estilos para el contenedor del nombre de la compañía */
+.company-name {
+  color: #fff; /* Texto blanco */
+  margin-right: 16px; /* Ajusta el margen según sea necesario */
+}
+
+/* Asegura que el contenido principal no quede oculto detrás del AppBar */
+.main-content {
+  margin-top: 64px; /* Ajusta según la altura del AppBar */
 }
