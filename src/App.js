@@ -11,19 +11,20 @@ function App() {
   return (
     <div>
       <Header />
-   
-      <Element name="home">
-        <Home />
-      </Element>
-      <Element name="projects">
-        <Projects />
-      </Element>
-      <Element name="contact">
-        <ContactUs />
-      </Element>
-      <Element name="donate">
-        <Donate />
-      </Element>
+      <div className="main-content">
+        <Element name="home">
+          <Home />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="contact">
+          <ContactUs />
+        </Element>
+        <Element name="donate">
+          <Donate />
+        </Element>
+      </div>
     </div>
   );
 }

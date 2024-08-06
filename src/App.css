@@ -13,6 +13,10 @@
   }
 }
 
+.header {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
 .App-header {
   background-color: #1e1e2f;
   min-height: 100vh;
@@ -67,7 +71,6 @@
   margin-right: 16px; /* Ajusta el margen según sea necesario */
 }
 
-/* Asegura que el contenido principal no quede oculto detrás del AppBar */
 .main-content {
-  margin-top: 64px; /* Ajusta según la altura del AppBar */
+  margin-top: 64px; /* Adjust according to the height of the AppBar */
 }
