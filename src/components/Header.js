@@ -9,10 +9,9 @@ import '../App.css'; // Importa el archivo CSS
 
 function Header() {
   return (
-    <AppBar position="fixed" className="styled-app-bar">
-      <Toolbar className="styled-toolbar">
-        <Box>
-          <ScrollLink to="home" smooth={true} duration={500}>
+    <AppBar position="fixed" className="styled-app-bar" style={{ backgroundColor: 'red' }}>
+      <Toolbar className="styled-toolbar" style={{ border: '1px solid blue' }}>
+      <Box>          <ScrollLink to="home" smooth={true} duration={500}>
             <Button className="nav-button">Home</Button>
           </ScrollLink>
           <ScrollLink to="projects" smooth={true} duration={500}>
@@ -24,8 +23,7 @@ function Header() {
           <ScrollLink to="donate" smooth={true} duration={500}>
             <Button className="nav-button">Donate</Button>
           </ScrollLink>
-        </Box>
-        <Typography variant="h6" className="company-name">
+          </Box> <Typography variant="h6" className="company-name">
           G&F Innovations Group LLC
         </Typography>
       </Toolbar>
